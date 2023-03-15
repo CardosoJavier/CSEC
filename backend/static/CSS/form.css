@@ -1,0 +1,394 @@
+:root
+{
+    --fs-xl: clamp(1.5rem, 5vw + 0.3rem, 4rem);
+    --fs-600: clamp(1.2rem, 5vw + 0.3rem, 3rem);
+    --fs-400: clamp(0.9rem, 3.5vw + 0.3rem, 2rem);
+    --fs-200: clamp(0.9rem, 2.5vw + 0.3rem, 3rem);
+}
+
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    :root
+    {
+        --fs-xl: clamp(2.5rem, 6vw + 0.6rem, 8rem);
+        --fs-600: clamp(1.5rem, 5.5vw + 0.3rem, 5rem);
+        --fs-400: clamp(1rem, 2.6vw + 0.3rem, 4rem);
+        --fs-200: clamp(0.9rem, 3vw + 0.3rem, 3rem);
+        --fs-100: clamp(0.9rem, 1.5vw + 0.3rem, 3rem);
+    }
+}
+
+@media (min-width: 1024px) 
+{
+    :root
+    {
+        --fs-xl: clamp(3.5rem, 7.5vw + 1rem, 12rem);
+        --fs-600: clamp(2rem, 6vw + 0.3rem, 6rem);
+        --fs-400: clamp(1rem, 2.6vw + 0.3rem, 4rem);
+        --fs-200: clamp(0.9rem, 2vw + 0.3rem, 3rem);
+        --fs-100: clamp(0.9rem, 1.5vw + 0.3rem, 3rem);
+    }
+}
+
+
+/*  Header section */
+
+.head-section
+{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+
+    min-height: 40vw;
+    /* Location of the image */
+    background-image: url("../img/form/header.svg");
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size: cover;
+}
+
+.head-section h1
+{
+    text-align: center;
+    border: 0.5vw solid white;
+    background-color: #062344;
+    color: white;
+    font-size: var(--fs-xl);
+
+    padding: 20px;
+    width: fit-content;
+
+    margin-top: 10vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Form section */
+.form-container
+{
+    background-image: linear-gradient(to right bottom, #9cd3e1, #88ccdf, #72c4df, #5abdde, #3cb5de);
+    min-height: 900px;
+}
+
+.personal-info-container
+{
+    display: flex;
+}
+
+.personal-info
+{
+    flex-wrap: wrap;
+    padding: 5vh 0;
+}
+
+.info
+{
+    display: flex;
+    margin: 1vh 0;
+}
+
+.info label
+{
+    display: inline-block;
+    vertical-align: top;
+
+    font-size: var(--fs-400);
+}
+
+.info input
+{
+    height: 4vh;
+    border-radius: 20px;
+    border: none;
+
+    text-align: center;
+    
+    display: inline-block;
+    vertical-align: top;
+}
+
+.michi
+{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
+
+.michi img
+{
+    width: calc(35vw + 1rem);
+}
+
+/* Comm. methods */
+.form-section
+{
+    display: flex;
+
+    flex-direction: column;
+}
+
+.form-section h2
+{
+    font-size: var(--fs-600);
+    text-align: center;
+}
+
+.options-wrapper
+{
+    text-align: center;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 1vh;
+
+    font-size: var(--fs-200);
+}
+
+.textbox-content
+{
+    text-align: center;
+    padding: 2vw;
+}
+
+.textbox-content h2
+{
+    padding: 2vh 0;
+}
+
+.textbox-content textarea
+{
+    font-size: var(--fs-200);
+    width: 80vw;
+}
+
+.submit-btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn button
+{
+    width: 30%;
+    text-align: center;
+    padding: 0.5rem 0;
+
+    font-size: var(--fs-400);
+}
+
+
+
+/* Mobile */
+@media only screen and (max-width: 767px) 
+{
+    .inside-form
+    {
+        margin: 1.5rem;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+    }
+
+    .personal-info-container
+    {
+        justify-content: center;
+    }
+
+    .michi img
+    {
+        display: none;
+    }
+
+    .info label
+    {
+        width: 30vw;
+    }
+
+    .info input
+    {
+        width: 50vw;
+        margin-left: 2vw;
+    }
+
+    .submit-btn
+    {
+        padding: 1rem 0;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) 
+{
+
+    .personal-info-container
+    {
+        align-items: center;
+        justify-content: space-evenly;
+
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        margin: 1.5rem;
+    }
+
+    .test
+    {
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        margin: 1.5rem;
+    }
+
+    .personal-info
+    {
+        width: 50%;
+    }
+
+    .info input[type="text"], input[type="email"], input[type="tel"]
+    {
+        width: 30vw;
+        height: auto;
+        margin-left: 1.5rem;
+    }
+
+    .textbox-container
+    {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-evenly;
+
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        margin: 0 1.5rem;
+    }
+
+    .textbox-content h2
+    {
+        font-size: var(--fs-600);
+        padding: 2vh 0;
+    }
+
+    .textbox-content textarea
+    {
+        font-size: var(--fs-200);
+        width: 40vw;
+    }
+
+    .info label
+    {
+        width: 15vw;
+    }
+
+    .submit-btn
+    {
+        padding-top: 3rem 0;
+        padding-bottom: 5rem;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px) 
+{
+    .personal-info-container
+    {
+        align-items: center;
+        justify-content: space-evenly;
+
+        padding: 5vh 0;
+
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        margin: 1.5rem;
+    }
+
+    .personal-info
+    {
+        width: 50%;
+    }
+
+    .info input[type="text"], input[type="email"], input[type="tel"]
+    {
+        width: 30vw;
+        height: 3.5rem;
+        margin-left: 1.5rem;
+        font-size: var(--fs-100);
+    }
+
+    .info label
+    {
+        width: 15vw;
+    }
+
+    .test
+    {
+        display: flex;
+        flex-direction: column;
+
+        justify-content: space-evenly;
+
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        margin: 1.5rem;
+
+    }
+
+    .school-year
+    {
+        flex-wrap: wrap;
+    }
+
+    .school-year div
+    {
+        margin: 0 1rem;
+    }
+
+    .mult-options
+    {
+        padding: 5rem 0;
+    }
+
+    .textbox-container
+    {
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-evenly;
+
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(15px);
+        border-radius: 25px;
+        margin: 0 1.5rem;
+    }
+
+    .textbox-content h2
+    {
+        font-size: var(--fs-400);
+        padding: 2vh 0;
+    }
+
+    .textbox-content textarea
+    {
+        font-size: var(--fs-200);
+        width: 35vw;
+    }
+
+    .submit-btn
+    {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+}

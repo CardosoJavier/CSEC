@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block title %} <title>Join CSEC</title> {% endblock title %}
+
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/form.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/base.css') }}">
+{% endblock styles %}
+
+{% block body%}
+
+<!-- Header section -->
+<div class="head-section">
+    <h1>Join the CSEC family</h1>
+</div>
+
+<!-- form -->
+<div class="form-container">
+
+    <form method="post">
+
+        <div class="inside-form">
+
+            <!-- personal infor and cat pic -->
+            <div class="personal-info-container">
+
+                <div class="personal-info">
+                    
+                    <div class="info">
+                        <label for="fName">Full Name</label>
+                        <input type="text" name="fName" id="fName">
+                    </div>
+
+                    <div class="info">
+                        <label for="id">Student ID</label>
+                        <input type="text" name="id" id="id">
+                    </div>
+
+                    <div class="info">
+                        <label for="email">UTA Email</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+
+                    <div class="info">
+                        <label for="phone">Phone No.</label>
+                        <input type="tel" name="phone" id="phone">
+                    </div>
+
+                </div>
+
+                <div class="michi">
+                    <img src="{{url_for('static', filename="img/uta/horse.png")}}" alt="CSEC cat image">
+                </div>
+
+            </div>
+            
+            <div class="test">
+            <!-- Comm. methods -->
+            
+                <div class="form-section mult-options">
+
+                    <h2>Preferred Method(s) of Communication</h2>
+
+                    <div class="options-wrapper">
+
+                        <div>
+                            <input type="checkbox" id="discord" name="discord">
+                            <label for="discord">Discord</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="teams" name="teams">
+                            <label for="Teams">Teams</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="mavEmail" name="mavEmail">
+                            <label for="mavEmail">MyMav Email</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="GroupMe" name="GroupMe">
+                            <label for="GroupMe">GroupMe</label>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- school year -->
+                <div class="form-section mult-options">
+
+                    <h2>School Year</h2>
+
+                    <div class="options-wrapper school-year">
+                        <div>
+                            <input type="radio" id="freshman" name="class" value="freshman">
+                            <label for="freshman">Freshman</label>
+                        </div> 
+            
+                        <div>
+                            <input type="radio" id="sophomore" name="class" value="sophomore">
+                            <label for="sophomore">Sophomore</label>
+                        </div>
+            
+                        <div>
+                            <input type="radio" id="junior" name="class" value="junior">
+                            <label for="junior">Junior</label>
+                        </div>
+            
+                        <div>
+                            <input type="radio" id="senior" name="class" value="senior">
+                            <label for="senior">Senior</label>
+                        </div>
+            
+                        <div>
+                            <input type="radio" id="graduate" name="class" value="graduate">
+                            <label for="graduate">Graduate</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Additional information -->
+            <div class="form-section">
+
+                <div class="textbox-container">
+
+                    <!-- How applicant hear about csec -->
+                    <div class="textbox-content">
+                        <h2>How did you hear about us?</h2>
+                        <textarea name="hear-about" rows="5" cols="50"></textarea>
+                    </div>
+
+                    <!-- Extra feedback -->
+                    <div class="textbox-content">
+                        <h2>Is there something you want to learn?</h2>
+                        <textarea name="hear-about" rows="5" cols="50"></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-section">
+            <div class="submit-btn">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        
+    </form>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+
+{% block title %} <title>About Us</title> {% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/about.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/base.css') }}">
+{% endblock styles %}
+
+{% block body%}
+
+<!-- Header section -->
+<div class="head-section">
+    <h1>Welcome to UT Arlington's<br>Cybersecurity Club</h1>
+</div>
+
+
+<!-- about section -->
+<div class="about-container">
+
+    <img src="{{url_for('static', filename='img/about/people.svg')}}">
+
+    <div class="about-text">
+        <h2>About the<br>Cybersecurity Club</h2>
+        
+        <p>The Cybersecurity Club is your gateway to a successful 
+            and fulfilling career in
+            the field of cybersecurity! We are
+            here to provide you with the tools, resources,
+            and support you need to succeed.
+            Through a variety of academic,
+            professional, and social events, you will
+            have the opportunity to develop your
+            skills, build your network, and have fun
+            along the way.
+        </p>
+    </div>
+</div>
+
+<!-- vision and mission -->
+<div class="v-m-list">
+
+    <div class="m-v-container">
+        
+        <div class="m-v-text">
+            <h2>Vision</h2>
+            <p>
+                Having CSEC be THE placeto go to for an inclusive, diverse community of bright cybersecurity talent.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="m-v-container">
+        
+        <div class="m-v-text">
+            <h2>Mission</h2>
+            <p>
+                The purpose of CSEC
+                is to develop and maintain and
+                inclusive, diverse community
+                promoting cybersecurity education,
+                industry connections,and early
+                career development through programs and activities. 
+            </p>
+        </div>
+        
+    </div>
+
+</div>
+
+<!-- squares section -->
+<div class="participate-container">
+    <div class="participate-info">
+        <h2>
+            Is it possible to participate without<br>prior knowledge of cybersecurity?
+        </h2>
+    
+        <p>
+            Regardless of their background or level of expertise. With a<br>
+            focus on teaching, mentoring, and providing resources, the<br>
+            club helps its members grow and succeed in the field. 
+        </p>
+    
+        <p>
+            No prior knowledge of computers or engineering is required, as<br>
+            many of our members have started with little to no knowledge<br>
+            of cybersecurity and have gone on to become club leaders and<br>
+            secure jobs in the industry.
+        </p>
+    </div>
+</div>
+
+{% endblock %}

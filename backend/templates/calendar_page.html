@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} <title>Calendar</title> {% endblock title %}
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/calendar.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/base.css') }}">
+{% endblock styles %}
+
+{% block body%}
+
+<div class="head-section">
+    <h1>Stay up to date with all of our events<br>by checking out our calendar.</h1>
+</div>
+
+<div class="calendar">
+    <iframe id="google-calendar" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FChicago&src=YzQ5ZWE5ZGRkYmJmNGQ4YWJkYjRlY2NmOTI5MmU4YjI0MTE3MDJmOGQxMmI2NzU4NzVlMGZiYWEwYWJlMTI0MEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4" style="border:none" frameborder="0" scrolling="no"></iframe>
+    <img src="{{url_for('static', filename="img/uta/michi.png")}}" alt="CSEC Cat">
+</div>
+
+{% endblock %}
