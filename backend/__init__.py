@@ -13,9 +13,5 @@ def create_app():
 
     app.register_blueprint(views)
 
-    """ database settings """
-
-    """ login manager settings """
-
     # return the built app from above
     return app

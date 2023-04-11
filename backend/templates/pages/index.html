@@ -1,34 +1,16 @@
-{% extends 'base.html' %}
+{% extends 'pages/base.html' %}
 
+{% block title %} Home {% endblock title %}
 
-{% block title %} <title>Home</title> {% endblock title %}
 {% block styles %}
-<link rel="stylesheet" href="{{ url_for('static', filename='CSS/home.css') }}">
-<link rel="stylesheet" href="{{ url_for('static', filename='CSS/base.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/pages/index.css') }}">
 {% endblock styles %}
 
-{% block body%}
+<!-- Header -->
+{% block header %}  {% include "components/banner.html" %}  {% endblock header %} 
 
+{% block content %} 
 <div class="home-container">
-
-    <!-- welcome section -->
-    <div class="welcome-container bg-cover">
-        <div class="welcome-content">
-            <h1>Welcome to CSEC</h1>
-            <br>
-            <h2>We're the Cybersecurity Club</h2>
-            <p>
-                The Cybersecurity Club aims to empower 
-                and provide support students for a career 
-                in cybersecurity through academic, professional, 
-                and social events.
-            </p>
-
-            <div class="join-btn">
-                <a href="http://tiny.cc/JOINCSEC">Join CSEC!</a>
-            </div>
-        </div>
-    </div>
 
     <!-- What do we do -->
     <div class="we-do-container bg-cover">
@@ -50,7 +32,7 @@
                     computer security topics.
                 </p>
                 <br>
-                <img src="{{url_for('static', filename="img/home/meeting.png")}}" alt="workshop icon">
+                <img src="{{url_for('static', filename="img/index/meeting.png")}}" alt="workshop icon">
             </div>
 
             <div class="activity">
@@ -62,7 +44,7 @@
                     and team-building opportunities. 
                 </p>
                 <br>
-                <img src="{{url_for('static', filename="img/home/flags.png")}}" alt="workshop icon">
+                <img src="{{url_for('static', filename="img/index/flags.png")}}" alt="workshop icon">
 
             </div>
 
@@ -75,7 +57,7 @@
                     for certification exams.
                 </p>
 
-                <img src="{{url_for('static', filename="img/home/workshop.png")}}" alt="workshop icon">
+                <img src="{{url_for('static', filename="img/index/workshop.png")}}" alt="workshop icon">
                 
             </div>
         </div>
@@ -86,21 +68,20 @@
     <div class="sponsors-container">
 
         <div class="sponsors-text">
-            <h1>Our beloved sponsors</h1>
-            <h2>A big thanks to all our sponsors!</h2>
+            <h1>Our <span class="beloved">beloved</span> sponsors</h1>
+            <p>A big thanks to all our <span class="beloved">sponsors</span>!</p>
         </div>
         
         <div class="img-container">
             <div class="sponsor-img">
-                <img src="{{url_for('static', filename="img/home/uta.svg")}}" alt="UTA logo">
+                <img src="{{url_for('static', filename="img/index/uta.svg")}}" alt="UTA logo">
             </div>
     
             <div class="sponsor-img">
-                <img src="{{url_for('static', filename="img/home/isaca.svg")}}" alt="ISACA logo">
+                <img src="{{url_for('static', filename="img/index/isaca.svg")}}" alt="ISACA logo">
             </div>
         </div>
     </div>
 
 </div>
-
-{% endblock %}
+{% endblock content %}

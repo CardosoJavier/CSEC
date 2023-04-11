@@ -1,0 +1,254 @@
+/* Mobile */
+:root
+{
+    --fs-600: 2rem;
+    --fs-400: 1.7rem;
+    --fs-200: 1.2rem;
+    --fs-100: 0.8rem;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    :root
+    {
+        --fs-600: 2.5rem;
+        --fs-400: 2.2rem;
+        --fs-200: 1.7rem;
+        --fs-100: 1.2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px)
+{
+    :root
+    {
+        --fs-600: 5rem;
+        --fs-400: 2.6rem;
+        --fs-200: 2rem;
+        --fs-100: 1.6rem;
+    }
+}
+
+/* All content wrapper */
+.home-container
+{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.bg-cover
+{
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size:cover;
+}
+
+/* what we do wrapper */
+.we-do-container
+{
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+
+    min-height: 65vh;
+    background-image: url("../../img/index/activities-bg-xl.png");
+}
+
+.we-do-text h1
+{
+    color: white;
+    margin: 0.5rem 1rem;
+
+    font-size: var(--fs-400);
+}
+
+.we-do-text h2
+{
+    color: #4E5D92;
+    margin: 1rem 1.5rem;
+
+    font-size: var(--fs-200);
+}
+
+.we-do-squares
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.activity
+{
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+}
+
+.activity h2
+{
+    color: white;
+    font-size: var(--fs-200);
+    padding-top: 1rem;
+}
+
+.activity p
+{
+    font-size: var(--fs-100);
+    margin: 0.5rem 1rem;
+    text-align: center;
+}
+
+/* sponsors */
+.sponsors-container
+{
+    background-image: radial-gradient(circle, #b9dbe5, #9fd0df, #84c4da, #66b9d5, #42add1);
+}
+
+.img-container
+{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10vw 0;
+    flex-wrap: wrap;
+}
+
+.sponsors-text
+{
+    color: white;
+    padding-top: 5vh;
+}
+
+.sponsors-text h1
+{
+    font-size: var(--fs-600);
+    padding-top: 3rem;
+}
+
+.sponsors-text p
+{
+    font-size: var(--fs-100);
+}
+
+.beloved 
+{
+    color: #0c2c6d;
+}
+
+/* mobile */
+@media only screen and (max-width: 767px)
+{
+    /* activities */
+    .activity
+    {
+        height: 20rem;
+        width: 15rem;
+        margin: 1rem;
+    }
+
+    .activity img
+    {
+        width: 8rem;
+    }
+
+    /* sponsors */
+    .img-container
+    {
+        display: flex;
+        flex-direction: column;
+
+        min-height: 50vh;
+    }
+
+    .sponsor-img img
+    {
+        width: 13rem;
+        margin: 5px 0;
+    }
+
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+{
+
+    /* activities */
+    .activity
+    {
+        height: 23rem;
+        width: 18rem;
+        margin: 1rem;
+    }
+
+    .activity img
+    {
+        width: 7rem;
+    }
+
+    /* sponsors */
+    .sponsors-container
+    {
+        min-height: 50vh;
+    }
+
+    .sponsor-img img
+    {
+        width: 20rem;
+    }
+
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px)
+{
+
+    /* activities */
+    .we-do-container
+    {
+        min-height: 105vh;
+    }
+
+    .activity
+    {
+        height: 33rem;
+        width: 23rem;
+        margin: 1rem;
+    }
+
+    .activity img
+    {
+        width: 10rem;
+    }
+
+    /* sponsors */
+    .sponsors-container
+    {
+        min-height: 60vw;
+    }
+
+    .sponsor-img img
+    {   
+        width: 32rem;  
+    }
+    
+}
