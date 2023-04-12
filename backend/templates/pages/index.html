@@ -7,7 +7,15 @@
 {% endblock styles %}
 
 <!-- Header -->
-{% block header %}  {% include "components/banner.html" %}  {% endblock header %} 
+{% block header %}  
+
+<!-- Import navbar -->
+{% include "components/navbar.html" %}
+
+<!-- import banner -->
+{% include "components/carousel_banner.html" %}  
+
+{% endblock header %} 
 
 {% block content %} 
 <div class="home-container">

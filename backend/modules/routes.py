@@ -10,3 +10,8 @@ from backend.modules import views
 @views.route('/')
 def home():
     return render_template("pages/index.html")
+
+""" About page """
+@views.route('/about')
+def about():
+    return render_template("pages/about.html")
