@@ -14,4 +14,15 @@ def home():
 """ About page """
 @views.route('/about')
 def about():
-    return render_template("pages/about.html")
+    return render_template("pages/about.html", 
+                           head1="Welcome to UT Arlington's", 
+                           head2="Cybersecurity Club",
+                           bg="about/about.svg")
+
+""" Calendar page """
+@views.route('/caledar')
+def calendar():
+    return render_template("pages/calendar.html", 
+                           head1="Stay up to date with all of our events", 
+                           head2="by checking out our calendar", 
+                           bg="calendar/calendar.svg")

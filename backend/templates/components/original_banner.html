@@ -1,7 +1,15 @@
 {% block styles %}
+
+<style>
+    .head-section
+    {
+        background-image: url("../../static/img/{{bg}}");
+    }
+</style>
+
 <link rel="stylesheet" href="{{ url_for('static', filename='CSS/components/original_banner.css') }}">
 {% endblock styles %}
 
 <div class="head-section">
-    <h1>Welcome to UT Arlington's<br>Cybersecurity Club</h1>
+    <h1>{{head1}}<br>{{head2}}</h1>
 </div>

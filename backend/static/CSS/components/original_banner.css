@@ -5,7 +5,7 @@
     margin: 0px;
     
     /* Location of the image */
-    background-image: url("../../img/about/about.svg");
+    /* background-image: url("../../img/about/about.svg"); */
 
     /* Background image is centered vertically and horizontally at all times */
     background-position: center center;

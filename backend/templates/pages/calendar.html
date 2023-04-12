@@ -1,0 +1,29 @@
+<!-- base -->
+{% extends 'pages/base.html' %}
+
+<!-- page title -->
+{% block title %} Calendar {% endblock title %}
+
+<!-- style -->
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/pages/calendar.css') }}">
+{% endblock styles %}
+
+<!-- header -->
+{% block header %}
+{% include "components/navbar.html" %}
+{% include "components/original_banner.html" %}
+{% endblock header %}
+
+<!-- content -->
+{% block content %}
+
+<div class="calendar">
+    <div data-tockify-component="calendar" data-tockify-calendar="javier.cardoso"></div>
+</div>
+{% endblock content %}
+
+<!-- Scripts -->
+{% block scripts %}
+<script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
+{% endblock scripts %}
