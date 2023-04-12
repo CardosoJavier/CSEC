@@ -197,7 +197,7 @@
     /* vision and mission container */
     .m-v-container
     {
-        width: 15rem;
+        width: 18rem;
         height: 25rem;
     }
 
@@ -262,8 +262,11 @@
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape)
+/* Desktop devices and landscape tablets*/
+@media only screen and (min-width: 1024px)
 {
+
+    /* About */
     .about-text h2
     {
         font-size: var(--fs-400);
@@ -279,30 +282,13 @@
     /* vision and mission container */
     .v-m-list
     {
-        padding: 7rem 0;
+        padding: 12rem 0;
     }
 
     .m-v-container
     {
-        width: 22rem;
-        height: 30rem;
-    }
-
-    /* participate section */
-    .participate-info h2
-    {
-        font-size: var(--fs-400);
-    }
-}
-
-/* Desktop devices */
-@media only screen and (min-width: 1024px)
-{
-    /* vision and mission container */
-    .m-v-container
-    {
-        width: 20rem;
-        height: 40rem;
+        width: 25rem;
+        height: 35rem;
     }
 
     .m-v-text h2
@@ -338,7 +324,7 @@
     /* vision and mission container */
     .v-m-list
     {
-        padding: 10rem 0;
+        padding: 15rem 0;
     }
 
     .m-v-container
