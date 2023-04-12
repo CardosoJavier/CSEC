@@ -52,6 +52,16 @@
 	height: 100vh;
 }
 
+@media (prefers-color-scheme: dark) 
+{
+    .carousel-caption a {
+        
+        background: #38B3DD;
+        border: 0.2rem solid #fff;
+        color: #fff;
+    }
+}
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
 
@@ -114,7 +124,6 @@
     .carousel-caption a
     {
         padding: 10px 30px;
-        border: 0.3rem solid #fff;
     }
 
 }
@@ -144,6 +153,5 @@
     .carousel-caption a
     {
         border: 0.4rem solid;
-        border-color: color(display-p3 255 255 255/100%); /* Add a color profile for Samsung Adaptive Color */
     }
 }
