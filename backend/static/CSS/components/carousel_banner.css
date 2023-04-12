@@ -143,6 +143,7 @@
 
     .carousel-caption a
     {
-        border: 0.4rem solid #fff;
+        border: 0.4rem solid;
+        border-color: color(display-p3 255 255 255/100%); /* Add a color profile for Samsung Adaptive Color */
     }
 }

@@ -9,87 +9,87 @@
 <!-- Header -->
 {% block header %}  
 
-<!-- Import navbar -->
-{% include "components/navbar.html" %}
+    <!-- Import navbar -->
+    {% include "components/navbar.html" %}
 
-<!-- import banner -->
-{% include "components/carousel_banner.html" %}  
-
+    <!-- import banner -->
+    {% include "components/carousel_banner.html" %}  
+    
 {% endblock header %} 
 
 {% block content %} 
-<div class="home-container">
+    <div class="home-container">
 
-    <!-- What do we do -->
-    <div class="we-do-container bg-cover">
+        <!-- What do we do -->
+        <div class="we-do-container bg-cover">
 
-        <div class="we-do-text">
-            <h2>What We Do?</h2>
-            <h1>We're a Team & Community of Technologies</h1>
-        </div>
-
-    
-        <div class="we-do-squares">
-            
-            <div class="activity">
-
-                <h2>Meetings</h2>
-                <p>
-                    Our cybersecurity club meetings provide a 
-                    platform to network, learn, and discuss 
-                    computer security topics.
-                </p>
-                <br>
-                <img src="{{url_for('static', filename="img/index/meeting.png")}}" alt="workshop icon">
+            <div class="we-do-text">
+                <h2>What We Do?</h2>
+                <h1>We're a Team & Community of Technologies</h1>
             </div>
 
-            <div class="activity">
-
-                <h2>CTFs</h2>
-                <p>
-                    CTFs offer hands-on experience, skill development, 
-                    networking opportunities, awareness of current threats, 
-                    and team-building opportunities. 
-                </p>
-                <br>
-                <img src="{{url_for('static', filename="img/index/flags.png")}}" alt="workshop icon">
-
-            </div>
-
-            <div class="activity">
-                <h2>Workshops</h2>
-                <p>
-                    We offer hands-on learning, skill development, 
-                    networking opportunities, awareness of current 
-                    trends and technologies, and preparation 
-                    for certification exams.
-                </p>
-
-                <img src="{{url_for('static', filename="img/index/workshop.png")}}" alt="workshop icon">
+        
+            <div class="we-do-squares">
                 
+                <div class="activity">
+
+                    <h2>Meetings</h2>
+                    <p>
+                        Our cybersecurity club meetings provide a 
+                        platform to network, learn, and discuss 
+                        computer security topics.
+                    </p>
+                    <br>
+                    <img src="{{url_for('static', filename="img/index/meeting.png")}}" alt="workshop icon">
+                </div>
+
+                <div class="activity">
+
+                    <h2>CTFs</h2>
+                    <p>
+                        CTFs offer hands-on experience, skill development, 
+                        networking opportunities, awareness of current threats, 
+                        and team-building opportunities. 
+                    </p>
+                    <br>
+                    <img src="{{url_for('static', filename="img/index/flags.png")}}" alt="workshop icon">
+
+                </div>
+
+                <div class="activity">
+                    <h2>Workshops</h2>
+                    <p>
+                        We offer hands-on learning, skill development, 
+                        networking opportunities, awareness of current 
+                        trends and technologies, and preparation 
+                        for certification exams.
+                    </p>
+
+                    <img src="{{url_for('static', filename="img/index/workshop.png")}}" alt="workshop icon">
+                    
+                </div>
             </div>
+            
         </div>
         
-    </div>
-    
-    <!-- Sponsors -->
-    <div class="sponsors-container">
+        <!-- Sponsors -->
+        <div class="sponsors-container">
 
-        <div class="sponsors-text">
-            <h1>Our <span class="beloved">beloved</span> sponsors</h1>
-            <p>A big thanks to all our <span class="beloved">sponsors</span>!</p>
-        </div>
+            <div class="sponsors-text">
+                <h1>Our <span class="beloved">beloved</span> sponsors</h1>
+                <p>A big thanks to all our <span class="beloved">sponsors</span>!</p>
+            </div>
+            
+            <div class="img-container">
+                <div class="sponsor-img">
+                    <img src="{{url_for('static', filename="img/index/uta.svg")}}" alt="UTA logo">
+                </div>
         
-        <div class="img-container">
-            <div class="sponsor-img">
-                <img src="{{url_for('static', filename="img/index/uta.svg")}}" alt="UTA logo">
-            </div>
-    
-            <div class="sponsor-img">
-                <img src="{{url_for('static', filename="img/index/isaca.svg")}}" alt="ISACA logo">
+                <div class="sponsor-img">
+                    <img src="{{url_for('static', filename="img/index/isaca.svg")}}" alt="ISACA logo">
+                </div>
             </div>
         </div>
-    </div>
 
-</div>
+    </div>
 {% endblock content %}
