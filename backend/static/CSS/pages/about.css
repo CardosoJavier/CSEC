@@ -1,7 +1,9 @@
 :root
 {
     --fs-600: 2rem;
+    --fs-500: 1.8rem;
     --fs-400: 1.7rem; 
+    --fs-300: 1.5rem;
     --fs-200: 1.2rem; 
     --fs-100: 0.8rem; 
 }
@@ -80,6 +82,8 @@
     align-items: center;
 
     flex-wrap: wrap;
+    padding: 7rem 0;
+    
 }
 
 .m-v-container
@@ -141,7 +145,7 @@
 
 
 /* mobile */
-@media only screen and (max-width: 767px)
+@media only screen and (max-width: 767px) and (orientation: portrait)
 {
     /* about content */
     .about-container
@@ -174,14 +178,14 @@
     }
 }
 
-/* Mobile devices (landscape) */
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape)
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) and (orientation: landscape)
 {
 
     /* About section */
     .about-text h2
     {
-        font-size: var(--fs-200);
+        font-size: var(--fs-400);
         margin: 1rem 0;
     }
     .about-text p
@@ -190,15 +194,34 @@
         margin: 1rem 0;
     }
 
+    /* vision and mission container */
+    .m-v-container
+    {
+        width: 15rem;
+        height: 25rem;
+    }
+
+    /* vision and mission text */
+    .m-v-text p
+    {
+        color: black;
+        font-size: var(--fs-100);
+    }
+
     /* participate section */
     .participate-info h2
     {
         font-size: var(--fs-600);
     }
+
+    .participate-info p
+    {
+        font-size: var(--fs-100);
+    }
 }
 
-/* Tablet devices (portrait) */
-@media only screen and (min-width: 768px) and (max-width: 1023px)
+/* Tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait)
 {
     .about-text h2
     {
@@ -239,11 +262,8 @@
     }
 }
 
-/* Tablet devices (landscape) */
-@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) 
+@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape)
 {
-
-    /* about section */
     .about-text h2
     {
         font-size: var(--fs-400);
@@ -264,11 +284,27 @@
 
     .m-v-container
     {
-        width: 25rem;
-        height: 32rem;
+        width: 22rem;
+        height: 30rem;
     }
 
-    /* vision and mission text */
+    /* participate section */
+    .participate-info h2
+    {
+        font-size: var(--fs-400);
+    }
+}
+
+/* Desktop devices */
+@media only screen and (min-width: 1024px)
+{
+    /* vision and mission container */
+    .m-v-container
+    {
+        width: 20rem;
+        height: 40rem;
+    }
+
     .m-v-text h2
     {
         color: white;
@@ -281,21 +317,9 @@
         font-size: var(--fs-100);
         margin: 0 1rem;
     }
-
-    /* participate section */
-    .participate-info h2
-    {
-        font-size: var(--fs-600);
-    }
-
-    .participate-info p
-    {
-        font-size: var(--fs-200);
-    }
 }
 
-
-/* Desktop devices */
+/* Large devices */
 @media only screen and (min-width: 1280px) 
 {
     /* About section */
