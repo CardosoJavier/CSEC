@@ -119,27 +119,52 @@
 /* participate section  */
 .participate-container
 {
-    color: white;
     background-image: linear-gradient(to right, #a0d4e3, #8bcade, #76c1d9, #5eb7d5, #42add1);
-    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 5rem;
 
-    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
 }
 
 .participate-info
 {
-    padding: 5rem 0;
+    width: 70%;
 }
 
-.participate-info h2
+.participate-info h1
 {
-    font-size: var(--fs-400);
-    
+    font-size: var(--fs-600);
+    color: #fff;
 }
 
-.participate-info p
+.card
 {
-    font-size: var(--fs-100);
+    border-radius: 2.5rem;
+}
+
+.card-header
+{
+    background-color: #43aed1;
+}
+
+.card-header button
+{
+    font-size: var(--fs-200);
+    color: white;
+}
+
+.card-header button:hover
+{
+    color: white;
+}
+
+.card-body
+{
+    background-color: #b4d9e4;
 }
 
 
@@ -206,17 +231,6 @@
         color: black;
         font-size: var(--fs-100);
     }
-
-    /* participate section */
-    .participate-info h2
-    {
-        font-size: var(--fs-600);
-    }
-
-    .participate-info p
-    {
-        font-size: var(--fs-100);
-    }
 }
 
 /* Tablet devices */
@@ -255,9 +269,9 @@
     }
 
     /* participate section */
-    .participate-info h2
+    .participate-container
     {
-        font-size: var(--fs-600);
+        padding-bottom: 8rem;
     }
 }
 
@@ -301,6 +315,12 @@
         color: black;
         font-size: var(--fs-100);
         margin: 0 1rem;
+    }
+
+    /* FAQ */
+    .participate-container
+    {
+        padding-bottom: 10rem;
     }
 }
 
@@ -355,5 +375,11 @@
     .participate-info p
     {
         font-size: var(--fs-200);
+    }
+
+    /* FAQ */
+    .participate-container
+    {
+        padding-bottom: 10rem;
     }
 }

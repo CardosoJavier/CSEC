@@ -57,6 +57,7 @@
     border-radius: 25px;
 
     width: 80%;
+    height: auto;
     padding: 1rem 0;
     margin: 2rem 0;
     
@@ -73,4 +74,24 @@
 {
     padding: 0.5rem 0;
     width: 80%;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px)
+{
+    .album
+    {
+        width: 50%;
+        height: auto;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 1024px)
+{
+    .album
+    {
+        width: 50%;
+        height: auto;
+    } 
 }
