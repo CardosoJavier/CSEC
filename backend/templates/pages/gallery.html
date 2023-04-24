@@ -1,0 +1,37 @@
+<!-- Page template -->
+{% extends 'pages/base.html' %}
+
+<!-- Title -->
+{% block title %} Gallery {% endblock title %}
+
+<!-- Styles -->
+{% block styles %}
+<link rel="stylesheet" href="{{ url_for('static', filename='CSS/pages/gallery.css') }}">
+{% endblock styles %}
+
+<!-- Header -->
+{% block header %}
+    {% include "components/navbar.html" %}
+    {% include "components/original_banner.html" %}
+{% endblock header %}
+
+<!-- Body content -->
+{% block content %}    
+
+    <div class="full-album">
+
+        <!-- Album 1: Spring 2023 -->
+        <div class="album">
+            <h1>Spring<br>2023</h1>
+            
+            <div class="images">
+                {% include "components/img_gallery.html" %}
+            </div>
+
+        </div>
+
+    </div>
+
+{% endblock content %}
+
+<!-- Scripts -->

@@ -1,9 +1,7 @@
 :root
 {
     --fs-600: 2rem;
-    --fs-500: 1.8rem;
     --fs-400: 1.7rem; 
-    --fs-300: 1.5rem;
     --fs-200: 1.2rem; 
     --fs-100: 0.8rem; 
 }
@@ -88,7 +86,8 @@
 
 .m-v-container
 {
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(15px);
     backdrop-filter: blur(15px);
 
     border-radius: 25px;

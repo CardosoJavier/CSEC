@@ -1,0 +1,74 @@
+:root
+{
+    --fs-600: 2rem;
+    --fs-400: 1.7rem; 
+    --fs-200: 1.2rem; 
+    --fs-100: 0.8rem; 
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1023px)
+{
+    :root
+    {
+        --fs-600: 2.5rem;
+        --fs-400: 2.2rem;
+        --fs-200: 1.7rem;
+        --fs-100: 1.2rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px)
+{
+    :root
+    {
+        --fs-600: 5rem;
+        --fs-400: 2.6rem;
+        --fs-200: 2rem;
+        --fs-100: 1.6rem;
+    }
+}
+
+.full-album
+{
+    background-image: radial-gradient(circle, #0353a4, #006bb6, #0084c5, #029bd2, #38b3dd);
+    min-height: 80vh;
+    padding-top: 2rem;
+    padding-bottom: 20rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.album
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.2); 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+
+    width: 80%;
+    padding: 1rem 0;
+}
+
+.album h1
+{
+    font-size: var(--fs-600);
+    color: #fff;
+    padding: 0 0.5rem;
+}
+
+.images
+{
+    padding: 0.5rem 0;
+    
+}

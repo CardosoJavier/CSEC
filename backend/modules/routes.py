@@ -26,3 +26,11 @@ def calendar():
                            head1="Stay up to date with all of our events", 
                            head2="by checking out our calendar", 
                            bg="calendar/calendar.svg")
+
+""" Gallery page """
+@views.route('/gallery')
+def gallery():
+    return render_template("pages/gallery.html", 
+                           head1="CSEC", 
+                           head2="Throughtout the Years", 
+                           bg="gallery/gallery.svg")

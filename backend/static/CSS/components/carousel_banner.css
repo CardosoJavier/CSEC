@@ -43,6 +43,7 @@
 	background: #38B3DD;
 	padding: 10px 30px;
     border: 0.2rem solid #fff;
+    border-radius: 15px;
 	display: inline-block;
 	color: #fff;
 	margin-top: 15px;
@@ -52,19 +53,9 @@
 	height: 100vh;
 }
 
-@media (prefers-color-scheme: dark) 
+/* mobile */
+@media only screen and (max-width: 767px) and (orientation:portrait)
 {
-    .carousel-caption a {
-        
-        background: #38B3DD;
-        border: 0.2rem solid #fff;
-        color: #fff;
-    }
-}
-
-/* Mobile */
-@media only screen and (max-width: 767px) {
-
     .carousel-item {
         height: 50vh;
         min-height: 300px;
@@ -91,16 +82,38 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: landscape) 
+@media only screen and (min-width: 740px) and (max-width: 1023px) and (orientation: landscape)
 {
-    /* CSS styles for mobile devices in landscape orientation */
+
+    .carousel-item {
+        height: 50vh;
+        min-height: 300px;
+    }
+
+    .carousel-caption {
+        top: 14vh;
+    }
+
+    .carousel-caption h5 {
+        font-size: 2.5rem;
+        font-weight: 600;  
+    }
+    
+    .carousel-caption p {
+        font-size: 0.7rem;
+        font-weight: 450;
+    }
+
+    .carousel-caption a
+    {
+        padding: 5px 20px;
+        
+    }
 }
 
-
-/* Tablet */
-@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) 
+/* Tablet devices */
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait)
 {
-
     .carousel-item {
         height: 80vh;
         min-height: 300px;
@@ -112,7 +125,7 @@
 
     .carousel-caption h5 {
         font-size: 5rem;
-        font-weight: 600;    
+        font-weight: 600;
     }
 
     .carousel-caption p {
@@ -125,22 +138,23 @@
     {
         padding: 10px 30px;
     }
-
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1279px) and (orientation: landscape) {
-    /* CSS styles for tablet devices in landscape orientation */
-}
-
-/* Desktop */
-@media only screen and (min-width: 1024px) 
+/* Desktop devices and landscape tablets*/
+@media only screen and (min-width: 1024px)
 {
+
+    .carousel-item {
+        height: 100vh;
+        min-height: 300px;
+    }
+
     .carousel-caption {
-        top: 30vh;
+        top: 25vh;
     }
 
     .carousel-caption h5 {
-        font-size: 5.5rem;
+        font-size: 4.5rem;
         font-weight: 600;
     }
 
@@ -152,6 +166,60 @@
 
     .carousel-caption a
     {
-        border: 0.4rem solid;
+        padding: 10px 30px;
+    }
+}
+
+/* Large devices */
+@media only screen and (min-width: 1280px) 
+{
+    /* About section */
+    .about-text h2
+    {
+        font-size: var(--fs-600);
+        margin: 1rem 0;
+    }
+
+    .about-text p
+    {
+        font-size: var(--fs-100);
+        margin: 1rem 0;
+    }
+
+    /* vision and mission container */
+    .v-m-list
+    {
+        padding: 15rem 0;
+    }
+
+    .m-v-container
+    {
+        width: 30rem;
+        height: 32rem;
+    }
+
+    /* vision and mission text */
+    .m-v-text h2
+    {
+        color: white;
+        font-size: var(--fs-600);
+    }
+
+    .m-v-text p
+    {
+        color: black;
+        font-size: var(--fs-100);
+        margin: 0 1rem;
+    }
+
+    /* participate section */
+    .participate-info h2
+    {
+        font-size: var(--fs-600);
+    }
+
+    .participate-info p
+    {
+        font-size: var(--fs-200);
     }
 }
