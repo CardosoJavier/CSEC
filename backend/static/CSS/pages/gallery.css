@@ -34,12 +34,12 @@
 {
     background-image: radial-gradient(circle, #0353a4, #006bb6, #0084c5, #029bd2, #38b3dd);
     min-height: 80vh;
-    padding-top: 2rem;
-    padding-bottom: 20rem;
+    padding: 5rem 0;
 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .album
@@ -47,7 +47,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    flex-direction: row;
+    flex-direction: column;
 
     text-align: center;
 
@@ -58,6 +58,8 @@
 
     width: 80%;
     padding: 1rem 0;
+    margin: 2rem 0;
+    
 }
 
 .album h1
@@ -70,5 +72,5 @@
 .images
 {
     padding: 0.5rem 0;
-    
+    width: 80%;
 }

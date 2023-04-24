@@ -41,18 +41,6 @@
     font-family:'Times New Roman', Times, serif;
 }
 
-.bg-cover
-{
-    /* Background image is centered vertically and horizontally at all times */
-    background-position: center center;
-
-    /* Background image doesn't tile */
-    background-repeat: no-repeat;
-
-    /* This is what makes the background image rescale based
-    on the container's size */
-    background-size:cover;
-}
 
 /* what we do wrapper */
 .we-do-container
@@ -66,9 +54,19 @@
 
     min-height: 65vh;
     background-image: url("../../img/index/activities-bg-xl.png");
+
+    /* Background image doesn't tile */
+    background-repeat: no-repeat;
+
+    /* This is what makes the background image rescale based
+    on the container's size */
+    background-size:cover;
+
+    /* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
 }
 
-.we-do-text h1
+.we-do-text h1, .icon-header h1
 {
     color: white;
     margin: 0.5rem 1rem;
@@ -114,7 +112,31 @@
 {
     font-size: var(--fs-100);
     margin: 0.5rem 1rem;
-    text-align: center;
+    text-align: left;
+}
+
+.icon-header
+{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: row;
+
+    padding-top: 1rem;
+}
+
+.icon
+{
+    background-color: #fff;
+    border-radius: 25%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 2rem;
+    padding: 10px;
+    margin: 0 10px;
+         
 }
 
 /* sponsors */
@@ -162,7 +184,7 @@
     /* activities */
     .activity
     {
-        height: 20rem;
+        height: 12rem;
         width: 15rem;
         margin: 1rem;
     }
@@ -196,7 +218,7 @@
     /* activities */
     .activity
     {
-        height: 23rem;
+        height: 18rem;
         width: 18rem;
         margin: 1rem;
     }
@@ -231,7 +253,7 @@
 
     .activity
     {
-        height: 33rem;
+        height: 25rem;
         width: 23rem;
         margin: 1rem;
     }

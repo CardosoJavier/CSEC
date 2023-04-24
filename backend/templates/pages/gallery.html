@@ -2,7 +2,7 @@
 {% extends 'pages/base.html' %}
 
 <!-- Title -->
-{% block title %} Gallery {% endblock title %}
+{% block title %} Gallery {% endblock %}
 
 <!-- Styles -->
 {% block styles %}
@@ -18,20 +18,42 @@
 <!-- Body content -->
 {% block content %}    
 
+    <!-- All albums -->
     <div class="full-album">
 
         <!-- Album 1: Spring 2023 -->
         <div class="album">
-            <h1>Spring<br>2023</h1>
+            <h1>Spring 2023</h1>
             
             <div class="images">
-                {% include "components/img_gallery.html" %}
+                {% with photos=['SP_23/','spring23-1.jpg', 'spring23-2.png'], id={'index': 1} %}
+                    {% include "components/photos.html" %}
+                {% endwith %}
             </div>
+        </div>
 
+         <!-- Album 2: Fall 2022 -->
+         <div class="album">
+            <h1>Fall 2022</h1>
+            
+            <div class="images">
+                {% with photos=['FA_22/','fall22-1.jpg', 'fall22-2.jpg'], id={'index': 2} %}
+                    {% include "components/photos.html" %}
+                {% endwith %}
+            </div>
+        </div>
+
+         <!-- Album 3: Fall 2021 -->
+         <div class="album">
+            <h1>Fall 2021</h1>
+            
+            <div class="images">
+                {% with photos=['FA_21/','FA21_1.jpg', 'FA21_2.jpg'], id={'index': 3} %}
+                    {% include "components/photos.html" %}
+                {% endwith %}
+            </div>
         </div>
 
     </div>
 
-{% endblock content %}
-
-<!-- Scripts -->
+{% endblock %}

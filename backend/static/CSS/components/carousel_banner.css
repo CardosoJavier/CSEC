@@ -13,7 +13,8 @@
     display: block;
     width: auto;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-position: center;
 
 }
 
@@ -140,7 +141,7 @@
     }
 }
 
-/* Desktop devices and landscape tablets*/
+/* Desktop devices and landscape tablets */
 @media only screen and (min-width: 1024px)
 {
 
@@ -223,3 +224,4 @@
         font-size: var(--fs-200);
     }
 }
+  

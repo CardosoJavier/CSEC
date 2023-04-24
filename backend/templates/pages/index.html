@@ -21,7 +21,7 @@
     <div class="home-container">
 
         <!-- What do we do -->
-        <div class="we-do-container bg-cover">
+        <div class="we-do-container">
 
             <div class="we-do-text">
                 <h2>What We Do?</h2>
@@ -32,40 +32,57 @@
             <div class="we-do-squares">
                 
                 <div class="activity">
+                    
+                    <div class="icon-header">
+                        <div class="icon">
+                            <i class="fa-regular fa-handshake fa-xl"></i>
+                        </div>
+                        
+                        <h2> Meetings </h2>
+                    </div>
 
-                    <h2>Meetings</h2>
                     <p>
                         Our cybersecurity club meetings provide a 
                         platform to network, learn, and discuss 
                         computer security topics.
                     </p>
-                    <br>
-                    <img src="{{url_for('static', filename="img/index/meeting.png")}}" alt="workshop icon">
+
                 </div>
 
                 <div class="activity">
 
-                    <h2>CTFs</h2>
+                    <div class="icon-header">
+                        <div class="icon">
+                            <i class="fa-regular fa-flag"></i>
+                        </div>
+
+                        <h2>CTF Events </h2>
+                    </div>
+                    
                     <p>
                         CTFs offer hands-on experience, skill development, 
                         networking opportunities, awareness of current threats, 
                         and team-building opportunities. 
                     </p>
-                    <br>
-                    <img src="{{url_for('static', filename="img/index/flags.png")}}" alt="workshop icon">
 
                 </div>
 
                 <div class="activity">
-                    <h2>Workshops</h2>
+
+                    <div class="icon-header">
+                        <div class="icon">
+                            <i class="fa-solid fa-chalkboard fa-xl"></i> 
+                        </div>
+
+                        <h2> Workshops </h2>
+                    </div>
+
                     <p>
                         We offer hands-on learning, skill development, 
                         networking opportunities, awareness of current 
                         trends and technologies, and preparation 
                         for certification exams.
                     </p>
-
-                    <img src="{{url_for('static', filename="img/index/workshop.png")}}" alt="workshop icon">
                     
                 </div>
             </div>
@@ -82,11 +99,11 @@
             
             <div class="img-container">
                 <div class="sponsor-img">
-                    <img src="{{url_for('static', filename="img/index/uta.png")}}" alt="UTA logo">
+                    <a href="https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/cse"><img src="{{url_for('static', filename="img/index/uta.png")}}" alt="UTA logo"></a>
                 </div>
         
                 <div class="sponsor-img">
-                    <img src="{{url_for('static', filename="img/index/isaca.png")}}" alt="ISACA logo">
+                    <a href="https://www.isaca.org/"><img src="{{url_for('static', filename="img/index/isaca.png")}}" alt="ISACA logo"></a>
                 </div>
             </div>
         </div>
